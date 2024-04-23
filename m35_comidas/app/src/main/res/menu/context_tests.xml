@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/testVolumen"
+        android:title="Test volumen" />
+    <item
+        android:id="@+id/testSobrecarga"
+        android:title="Test sobrecarga" />
+    <item
+        android:id="@+id/testEquivalencia"
+        android:title="Test equivalencia platos" />
+    <item
+        android:id="@+id/testEquivalencia2"
+        android:title="Test equivalencia pedidos" />
+</menu>

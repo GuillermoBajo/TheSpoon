@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/big_padding"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/titulo"
+                android:layout_marginLeft="16dp"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/min_height"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/hint_titulo"
+            android:inputType="textAutoComplete"
+            android:layout_margin="@dimen/big_padding"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_padding"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/precio"
+            android:layout_marginLeft="16dp"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/min_height"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/hint_precio"
+            android:inputType="numberDecimal"
+            android:layout_margin="@dimen/big_padding"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_padding"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/categoria"
+            android:layout_marginLeft="16dp"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/categoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_margin="@dimen/big_padding"
+            android:fontFamily="sans-serif-light"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/opcionA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:buttonTint="@color/black"
+                android:checked="true"
+                android:text="Primero" />
+
+            <RadioButton
+                android:id="@+id/opcionB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:buttonTint="@color/black"
+                android:text="Segundo" />
+
+            <RadioButton
+                android:id="@+id/opcionC"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:buttonTint="@color/black"
+                android:text="Tercero" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_padding"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/descripcion"
+            android:layout_marginLeft="16dp"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/big_padding"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/hint_descripcion"
+            android:inputType="textAutoComplete"
+            android:minHeight="@dimen/min_height"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/min_height"
+            android:backgroundTint="#52C156"
+            android:text="@string/button_save"
+            android:layout_margin="@dimen/big_padding"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

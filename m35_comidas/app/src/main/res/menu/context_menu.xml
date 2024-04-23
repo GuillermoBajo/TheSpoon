@@ -1,0 +1,12 @@
+<!-- res/menu/context_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuOrderByName"
+        android:title="Ordenar por nombre" />
+    <item
+        android:id="@+id/menuOrderByCategory"
+        android:title="Ordenar por categoría" />
+    <item
+        android:id="@+id/menuOrderByBoth"
+        android:title="Ordenar por ambas" />
+</menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.unizar.eina.m35_comidas.ui.pedidos.PedidoFragmento">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_marginTop="8dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginRight="@dimen/small_padding"
+        app:layout_constraintBottom_toTopOf="@+id/botones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/recyclerview_item" />
+
+    <LinearLayout
+        android:id="@+id/botones"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerview">
+
+
+        <Button
+            android:id="@+id/ord"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="@dimen/small_padding"
+            android:drawableLeft="@drawable/ordenar"
+            android:textSize="17dp"
+            android:onClick="openContextMenu"
+            android:text="Ordenar platos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:layout_weight="1.17"
+            android:maxLines="1"
+            android:ellipsize="none"/>
+
+        <Button
+            android:id="@+id/crePlat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="@dimen/small_padding"
+            android:backgroundTint="#52C156"
+            android:drawableLeft="@drawable/ic_add_black_24dp"
+            android:text="Crear plato"
+            android:textSize="17dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="none"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

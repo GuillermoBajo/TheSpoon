@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuOrderByNomCli"
+        android:title="Ordenar por nombre de cliente" />
+    <item
+        android:id="@+id/menuOrderByNumCli"
+        android:title="Ordenar por numero de cliente" />
+    <item
+        android:id="@+id/menuOrderByFecha"
+        android:title="Ordenar por fecha y hora" />
+</menu>

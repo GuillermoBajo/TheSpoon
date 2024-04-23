@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="@dimen/big_padding"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/tituloPed"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/tituloPed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_height"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/hint_tituloPed"
+        android:inputType="textAutoComplete"
+        android:layout_margin="@dimen/big_padding"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/big_padding"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/tlfn"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/tlfn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_height"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/hint_tlfn"
+        android:inputType="number"
+        android:layout_margin="@dimen/big_padding"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/big_padding"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/fecha"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_height"
+        android:fontFamily="sans-serif-light"
+        android:layout_margin="@dimen/big_padding"
+        android:textSize="18sp"
+        android:hint="@string/hint_fecha"/>
+
+    <TextView
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="@dimen/big_padding"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/hora"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TimePicker
+        android:id="@+id/hora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_height"
+        android:fontFamily="sans-serif-light"
+        android:layout_margin="@dimen/big_padding"
+        android:textSize="18sp"
+        android:timePickerMode="spinner"/>
+    <TextView
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_padding"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/estado"
+        android:layout_marginLeft="16dp"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/estado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="@dimen/big_padding"
+        android:fontFamily="sans-serif-light"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/OptSolicitado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:buttonTint="@color/black"
+            android:checked="true"
+            android:text="Solicitado" />
+
+        <RadioButton
+            android:id="@+id/OptPreparado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:buttonTint="@color/black"
+            android:text="Preparado" />
+
+        <RadioButton
+            android:id="@+id/OptRecogido"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:buttonTint="@color/black"
+            android:text="Recogido" />
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_padding"
+        android:fontFamily="sans-serif-light"
+        android:text="Platos:"
+        android:layout_marginLeft="16dp"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewListaPlatos"
+        android:padding="@dimen/big_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/recyclerview_itemplatopedido" />
+
+    <Button
+        android:id="@+id/agnadirPlatosBot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/button_save"
+        android:layout_marginStart="@dimen/big_padding"
+        android:layout_marginEnd="@dimen/big_padding"
+        android:minHeight="@dimen/min_height"
+        android:text="Editar platos"
+        android:layout_gravity="end"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_padding"
+        android:fontFamily="sans-serif-light"
+        android:text="Precio total:"
+        android:layout_marginLeft="16dp"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/precioPedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00 €"
+        android:textSize="30sp"
+        android:layout_marginLeft="16dp"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_height"
+        android:backgroundTint="#52C156"
+        android:text="@string/button_save"
+        android:layout_margin="@dimen/big_padding"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+</ScrollView>
+
+
+

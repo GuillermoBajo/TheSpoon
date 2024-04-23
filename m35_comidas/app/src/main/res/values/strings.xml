@@ -1,0 +1,30 @@
+<resources>
+    <!-->Resources de platos<-->
+    <string name="app_name">M35_Comidas</string>
+    <string name="hint_titulo">Introduzca el nombre ...</string>
+    <string name="hint_descripcion">Introduzca la descripción ...</string>
+    <string name="hint_categoria">Introduzca la categoría ...</string>
+    <string name="hint_precio">Introduzca el precio ...</string>
+    <string name="button_save">Guardar</string>
+    <string name="add_plato">Crear plato</string>
+    <string name="order_plato">Ordenar platos</string>
+    <string name="menu_delete">Borrar plato</string>
+    <string name="menu_edit">Editar plato</string>
+    <string name="titulo">Nombre:</string>
+    <string name="descripcion">Descripción:</string>
+    <string name="categoria">Categoría:</string>
+    <string name="precio">Precio:</string>
+    <!-->Resources de pedidos<-->
+    <string name="menuPed_delete">Borrar pedido</string>
+    <string name="menuPed_edit">Editar pedido</string>
+    <string name="tituloPed">Nombre del cliente:</string>
+    <string name="tlfn">Teléfono del cliente:</string>
+    <string name="fecha">Fecha de recogida:</string>
+    <string name="hora">Hora de recogida:</string>
+    <string name="estado">Estado:</string>
+    <string name="hint_tituloPed">Introduzca el nombre del cliente ...</string>
+    <string name="hint_tlfn">Introduzca el teléfono del cliente  ...</string>
+    <string name="hint_fecha">Doble clic para seleccionar la fecha ...</string>
+    <string name="add_pedido">Crear pedido</string>
+    <string name="order_pedido">Ordenar pedidos</string>
+</resources>

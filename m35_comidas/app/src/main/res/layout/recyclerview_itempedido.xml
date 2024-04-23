@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:background="#86E3EF"
+    android:layout_marginBottom="10dp">
+
+    <Button
+        android:id="@+id/botNotificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOTIFICAR"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/fechaTextView"
+        style="@style/word_fecha"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#86E3EF"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/nomCliTextView"
+        style="@style/word_title"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="#86E3EF"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/numCliTextView"
+        style="@style/word_num"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#86E3EF"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/precioPedTextView"
+        style="@style/word_precio2"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#86E3EF"
+        android:layout_marginTop="83dp"/>
+
+    <TextView
+        android:id="@+id/estadoTextView"
+        style="@style/word_estado"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#86E3EF"
+        android:layout_marginTop="115dp"/>
+
+
+</RelativeLayout>

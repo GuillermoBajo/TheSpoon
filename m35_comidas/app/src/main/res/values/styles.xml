@@ -1,0 +1,113 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <!-- Estilo personalizado para las pestañas (TabLayout) -->
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#15C7DD</item> <!-- Color de la línea indicadora -->
+        <item name="tabSelectedTextColor">#FFFFFF</item> <!-- Color del texto seleccionado -->
+        <item name="tabTextColor">#15C7DD</item> <!-- Color del texto no seleccionado -->
+    </style>
+
+    <style name="MyTimePickerStyle" parent="Widget.MaterialComponents.TimePicker">
+        <item name="android:numbersTextColor">@color/colorPrimary</item>
+        <!-- Puedes ajustar otros atributos según tus necesidades -->
+    </style>
+
+    <!-- The default font for RecyclerView items is too small.
+    The margin is a simple delimiter between the words. -->
+    <style name="word_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@android:color/holo_orange_light</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="word_num">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@android:color/holo_orange_light</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="word_categoria">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textColor">#808080</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+
+    <style name="word_descripcion">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@android:color/holo_orange_light</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="word_precio">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@android:color/holo_orange_light</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="word_fecha">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@android:color/holo_orange_light</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textColor">#808080</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="word_estado">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@android:color/holo_orange_light</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textColor">#808080</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+    <style name="word_subtitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Holo.Medium</item>
+    </style>
+
+    <style name="word_precio2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@android:color/holo_orange_light</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+</resources>
