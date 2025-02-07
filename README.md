@@ -1,21 +1,21 @@
 # TheSpoon
 
-El proyecto desarrolla una aplicación móvil para la gestión de pedidos en una tienda de preparación de comidas. Permite al propietario crear, modificar y eliminar platos, así como gestionar pedidos de los clientes. La aplicación ofrece funcionalidades como listar y filtrar platos y pedidos, y se apoya en una base de datos relacional SQL.
+The project develops a mobile application for managing orders in a meal preparation store. It allows the owner to create, modify, and delete dishes, as well as manage customer orders. The application offers features such as listing and filtering dishes and orders, and relies on a relational SQL database.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-- **Visual Paradigm** para modelar el sistema, incluyendo diagramas de casos de uso, clases, secuencia y navegación.
-- **SQL** como sistema de gestión de bases de datos relacional para almacenar información sobre platos y pedidos.
-- **Java** como lenguaje de programación principal para desarrollar la aplicación móvil.
-- **Android Studio** como plataforma de desarrollo para asegurar la compatibilidad de la aplicación con dispositivos Android.
+- **Visual Paradigm** for modeling the system, including use case diagrams, class diagrams, sequence diagrams, and navigation.
+- **SQL** as the relational database management system to store information about dishes and orders.
+- **Java** as the main programming language for developing the mobile application.
+- **Android Studio** as the development platform to ensure compatibility with Android devices.
 
-## Funcionalidades Clave
+## Key Features
 
-- **Creación, modificación y eliminación de platos** con detalles como nombre, descripción, categoría y precio.
-- **Gestión de pedidos** que incluye nombre del cliente, número de teléfono, fecha y hora de recogida, y selección de platos.
-- **Listar y filtrar platos y pedidos** por criterios como estado, nombre de cliente, número de móvil, o fecha y hora de recogida.
+- **Creation, modification, and deletion of dishes** with details such as name, description, category, and price.
+- **Order management** including customer name, phone number, pickup date and time, and dish selection.
+- **Listing and filtering dishes and orders** by criteria such as status, customer name, mobile number, or pickup date and time.
 
-## Diseño del Sistema
+## System Design
 
-- El diseño abarca diagramas de casos de uso, clases, secuencia y navegación para facilitar la comprensión y operación de la aplicación.
-- Los prototipos de pantallas y mapas de navegación ayudan a visualizar el flujo de la aplicación y las interacciones del usuario.
+- The design includes use case diagrams, class diagrams, sequence diagrams, and navigation diagrams to facilitate understanding and operation of the application.
+- Screen prototypes and navigation maps help visualize the application's flow and user interactions.
