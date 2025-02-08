@@ -1,21 +1,33 @@
-# TheSpoon
+# Mobile App for Managing Food Orders
 
-The project develops a mobile application for managing orders in a meal preparation store. It allows the owner to create, modify, and delete dishes, as well as manage customer orders. The application offers features such as listing and filtering dishes and orders, and relies on a relational SQL database.
+This project involves the development of a mobile application for managing food orders in a meal preparation shop. The app allows store owners to manage dishes and orders, with features for adding, updating, and deleting dishes and orders, and tracking order statuses.
 
-## Technologies Used
+## Key Features:
+- **Dish Management**: Create, edit, delete, and list dishes with details like name, category, and price.
+- **Order Management**: Create, update, and delete customer orders, including dish selection and pick-up time.
+- **Automatic Pricing**: Order total is calculated based on selected dishes and quantities.
+- **Order Status**: Track order progress (e.g., "Requested", "Prepared", "Picked up").
 
-- **Visual Paradigm** for modeling the system, including use case diagrams, class diagrams, sequence diagrams, and navigation.
-- **SQL** as the relational database management system to store information about dishes and orders.
-- **Java** as the main programming language for developing the mobile application.
-- **Android Studio** as the development platform to ensure compatibility with Android devices.
+## System Requirements:
+- Android OS compatibility.
+- Handles up to 100 dishes and 2,000 orders.
 
-## Key Features
+## Database Design:
+The app uses a relational database to store dishes and orders. Key entities include:
+- **Dish**: Stores dish details (name, description, price).
+- **Order**: Contains customer details, selected dishes, and order status.
 
-- **Creation, modification, and deletion of dishes** with details such as name, description, category, and price.
-- **Order management** including customer name, phone number, pickup date and time, and dish selection.
-- **Listing and filtering dishes and orders** by criteria such as status, customer name, mobile number, or pickup date and time.
+## User Interface:
+The app features an intuitive UI with screens for managing orders and dishes. Users can navigate through a list of orders, create or modify them, and access dish management functionalities.
 
-## System Design
+## Testing:
+- Unit and system tests for functionality and performance.
+- Performance tests for handling typical and excessive data loads.
 
-- The design includes use case diagrams, class diagrams, sequence diagrams, and navigation diagrams to facilitate understanding and operation of the application.
-- Screen prototypes and navigation maps help visualize the application's flow and user interactions.
+## Technologies Used:
+- **Java** for app development.
+- **SQL** for database management.
+- **Android OS** for the platform.
+
+## Conclusion:
+The app provides a simple yet efficient way for food preparation shops to manage customer orders and dish inventory, offering key features like pricing automation and order status tracking.
